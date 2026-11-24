@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <p>Redirecting to one of three links...</p>
+    <noscript>
+      <p>JavaScript is required for automatic redirection. Choose a link:</p>
+      <ul>
+        <li><a href="https://example.com/">Link 1</a></li>
+        <li><a href="https://example.org/">Link 2</a></li>
+        <li><a href="https://example.net/">Link 3</a></li>
+      </ul>
+    </noscript>
+    <script>
+      const links = [
+        "https://example.com/",
+        "https://example.org/",
+        "https://example.net/"
+      ];
+
+      const selectedLink = links[Math.floor(Math.random() * links.length)];
+      window.location.replace(selectedLink);
+    </script>
+  </body>
+</html>
